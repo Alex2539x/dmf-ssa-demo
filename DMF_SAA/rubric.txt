@@ -1,0 +1,51 @@
+Hi, Alex!
+
+This is Aneesha (ak828). I'll be your grader for A3. I'm
+doing the manual grading of your submission; the autograder feedback regarding
+fulfillment of specifications is attached below.
+
+-----------------------------------------------------------------------
+
+Your total scores for each manually-graded category are:
+
+Implementation constraints:     14 out of  16
+Code style:                      4 out of   4
+Metadata:                        2 out of   2
+
+Total:                          20 out of  22
+
+-----------------------------------------------------------------------
+
+Below you will find a record of any deductions I made.
+
+IMPLEMENTATION AND TESTING CONSTRAINTS
+
+-1: Missing non-null precondition assertion in at least two of: `contains()`,
+    `append()`, `insertBefore()`, and `remove()`.
+-1: `main()` does not check that read tables meet requirements for `join()`
+    before calling `join()`, printing a helpful message and exiting with a code
+    of 1 if conditions are not met for the left list
+
+
+CODE STYLE
+No deductions.
+METADATA
+No deductions.
+
+
+
+-----------------------------------------------------------------------
+
+Here are some suggestions about how to improve your code for the next
+assignment:
+
+CSV failed when:
+   when some fields are empty
+      FAILED: java.lang.AssertionError
+      at dmf_demo.CsvJoin.assertTableInvariants(CsvJoin.java:69)
+    when multiple matches are present
+      FAILED: java.lang.AssertionError
+      at dmf_demo.CsvJoin.assertTableInvariants(CsvJoin.java:69)
+
+InsertBefore also failed
+-----------------------------------------------------------------------
